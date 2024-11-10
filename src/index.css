@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply text-slate-300 bg-blue-500 border ms-1 border-blue-500 hover:bg-blue-600 hover:border-blue-600 transition-all duration-500 bottom-3 py-2.5 px-5 rounded-md
+}

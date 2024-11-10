@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Casa-Cálida
+    env: static
+    staticPublishPath: ./build
+    buildCommand: npm install && npm run dev
+    branch: main
+    routes:
+      - type: rewrite
+        source: '/*'
+        destination: '/'
