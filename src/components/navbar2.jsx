@@ -49,11 +49,11 @@ const Navbar2 = () => {
   );
   return (
     <nav>
-      <div className="h-20 justify-between flex z-50 text-white md:px-20 px-10 py-4 bg-slate-950">
+      <div className="h-20 justify-between flex z-50 text-white md:px-20 px-10 py-4 bg-slate-950 border-none">
 
         <div className=" flex flex-1 items-center">
           <img src="/fire-svgrepo-com.svg" className="h-10 me-3"/>
-          <span className="text-2xl font-semibold">Casa Cálida</span>
+          <span className="text-2xl font-light">Casa Cálida</span>
         </div>
         <div className="sm:flex flex-1 items-center justify-center font-normal hidden">
           <div className="flex-10">
