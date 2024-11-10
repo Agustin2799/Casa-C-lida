@@ -16,13 +16,13 @@ const Navbar2 = () => {
       <motion.div
         className="sm:hidden absolute top-16 w-full left-0 right-0 bg-slate-950 transition duration-1000"
         transition={{ duration: 0.5 }}
-        animate={
-          !navOpen
-            ? { opacity: [1, 0.5, 0], height: ["auto", 0] }
-            : { opacity: [0, 0.5, 1], height: [0, "auto"] }
-        }
+        initial={{ opacity: 0}} // Establece la opacidad inicial en 0, es decir, el ícono comienza invisible.
+        // 'animate' define cómo debe cambiar la opacidad cuando el ícono es visible.
+        animate={{ opacity: navOpen ? 1 : 0}} // Cambia la opacidad a 1, lo que hace que el ícono se vuelva visible.
+        // 'exit' define cómo debe comportarse la opacidad cuando el ícono desaparece (en este caso se desvanece).
+        exit={{ opacity: 0}} // Hace que el ícono se desvanezca (opacidad 0) cuando el estado cambia.
       >
-        <motion.ul className="text-center text-xl px-14 py-8 ">
+        <ul className="text-center text-xl px-14 py-8 ">
           <Link spy={true} smooth={true} to="">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               Home
@@ -43,7 +43,7 @@ const Navbar2 = () => {
               Products
             </li>
           </Link>
-        </motion.ul>
+        </ul>
       </motion.div>
     </>
   );
