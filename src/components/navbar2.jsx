@@ -14,7 +14,7 @@ const Navbar2 = () => {
   const content = (
     <>
       <motion.div
-        className="sm:hidden absolute top-16 w-full left-0 right-0 bg-slate-950 transition duration-1000"
+        className="sm:hidden absolute top-16 w-full left-0 right-0 bg-slate-950 transition duration-1000 z-50"
         transition={{ duration: 0.5 }}
         initial={{ opacity: 0}} // Establece la opacidad inicial en 0, es decir, el ícono comienza invisible.
         // 'animate' define cómo debe cambiar la opacidad cuando el ícono es visible.
@@ -50,8 +50,10 @@ const Navbar2 = () => {
   return (
     <nav>
       <div className="h-20 justify-between flex z-50 text-white md:px-20 px-10 py-4 bg-slate-950">
+
         <div className=" flex flex-1 items-center">
-          <span className="text-3xl font-bold">Logo</span>
+          <img src="/fire-svgrepo-com.svg" className="h-10 me-3"/>
+          <span className="text-2xl font-semibold">Casa Cálida</span>
         </div>
         <div className="sm:flex flex-1 items-center justify-center font-normal hidden">
           <div className="flex-10">
@@ -59,7 +61,7 @@ const Navbar2 = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="hover:text-fuchsia-600 transition border-b-2 border-slate-950  hover:border-fuchsia-600 cursor-pointer duration-500"
+                className="hover:text-orange-500 transition border-b-2 border-slate-950  hover:border-orange-500 cursor-pointer duration-500"
                 to=""
               >
                 <li>Home</li>
@@ -67,7 +69,7 @@ const Navbar2 = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="hover:text-fuchsia-600 transition border-b-2 border-slate-950  hover:border-fuchsia-600 cursor-pointer duration-500"
+                className="hover:text-orange-500 transition border-b-2 border-slate-950  hover:border-orange-500 cursor-pointer duration-500"
                 to=""
               >
                 <li>About</li>
@@ -75,7 +77,7 @@ const Navbar2 = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="hover:text-fuchsia-600 transition border-b-2 border-slate-950  hover:border-fuchsia-600 cursor-pointer duration-500"
+                className="hover:text-orange-500 transition border-b-2 border-slate-950  hover:border-orange-500 cursor-pointer duration-500"
                 to=""
               >
                 <li>Services</li>
@@ -83,7 +85,7 @@ const Navbar2 = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="hover:text-fuchsia-600 transition border-b-2 border-slate-950  hover:border-fuchsia-600 cursor-pointer duration-500"
+                className="hover:text-orange-500 transition border-b-2 border-slate-950  hover:border-orange-500 cursor-pointer duration-500"
                 to=""
               >
                 <li>Products</li>
@@ -91,7 +93,7 @@ const Navbar2 = () => {
               <Link
                 spy={true}
                 smooth={true}
-                className="hover:text-fuchsia-600 transition border-b-2 border-slate-950  hover:border-fuchsia-600 cursor-pointer duration-500"
+                className="hover:text-orange-500 transition border-b-2 border-slate-950  hover:borderorange-500 cursor-pointer duration-500"
                 to=""
               >
                 <li></li>
