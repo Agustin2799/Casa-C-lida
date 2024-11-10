@@ -2,11 +2,11 @@ import Navbar from "./components/navbar";
 import Navbar2 from "./components/navbar2";
 import AnimationText from "./components/AnimationText";
 import { motion } from "framer-motion";
-import Button from "./components/button";
+import Button from "./components/Button";
 // Actualiza las importaciones
 
 function App() {
-  return (
+  return 
     <>
       <Navbar2 />
       <section className="bg-[url(/fuego-medias.jpg)] bg-cover bg-center max-w-full overflow-x-hidden">
