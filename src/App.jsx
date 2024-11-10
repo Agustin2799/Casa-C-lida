@@ -2,7 +2,7 @@ import Navbar from "./components/navbar";
 import Navbar2 from "./components/navbar2";
 import AnimationText from "./components/AnimationText";
 import { motion } from "framer-motion";
-import Button from "./components/Button";
+import Button from "./components/button";
 // Actualiza las importaciones
 
 function App() {
