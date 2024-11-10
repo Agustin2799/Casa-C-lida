@@ -2,9 +2,9 @@ services:
   - type: web
     name: Casa-Cálida
     env: static
-    staticPublishPath: ./dist   # Asegúrate de que Vite esté generando los archivos en la carpeta 'dist'
-    buildCommand: npm install && npm run build  # Cambiar a 'npm run build' para producción
-    startCommand: npm run preview  # Usar 'npm run preview' para servir los archivos construidos
+    staticPublishPath: ./dist   # La carpeta con los archivos generados por Vite
+    buildCommand: npm install && npm run build  # Este comando construye la aplicación para producción
+    startCommand: npm run preview  # Este comando sirve los archivos de la build en producción
     branch: main
     routes:
       - type: rewrite
