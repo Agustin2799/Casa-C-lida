@@ -10,6 +10,7 @@ const Button = ({ text }) => {
       transition={{duration:1.5, delay: 2.8}}
     >
       <motion.button
+        initial={{rotate:0, scale:1}}
         whileHover={{ rotate: [0, 10, 8, 6, 4, 2, 0], scale: 1.1 }}
         transition={{ duration: 1}}
         className={
