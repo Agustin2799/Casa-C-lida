@@ -1,7 +1,7 @@
 
 import Navbar2 from "./components/navbar2";
-import SectionOne from "./components/SectionOne";
-import SectionTwo from "./components/SectionTwo";
+import { BrowserRouter, Routes, Route } from 'react-router'
+import Home from "./views/Home";
 
 
 
@@ -10,13 +10,12 @@ import SectionTwo from "./components/SectionTwo";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar2 />
-      <SectionOne />
-      <SectionTwo/>
-      
-     
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

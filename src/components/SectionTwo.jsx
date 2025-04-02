@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedParagraph from "./AnimatedParagraph";
 import { motion } from "framer-motion";
 
 const SectionTwo = () => {
@@ -9,18 +10,18 @@ const SectionTwo = () => {
           <motion.p
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
           >
             Somos{" "}
-            <sapn className="font-semibold text-amber-500 hover:text-amber-400 cursor-pointer transition-all duration-500">
+            <span className="font-semibold text-amber-500 hover:text-amber-400 cursor-pointer transition-all duration-500">
               Casa Cálida
-            </sapn>
+            </span>
             , una empresa comprometida con el bienestar y el cuidado del medio
             ambiente. Nos especializamos en la fabricación, instalación y
             mantenimiento de{" "}
-            <sapn className="font-semibold text-amber-500 hover:text-amber-400 cursor-pointer transition-all duration-500">
+            <span className="font-semibold text-amber-500 hover:text-amber-400 cursor-pointer transition-all duration-500">
               calefactores ecológicos
-            </sapn>
+            </span>
             , diseñados para brindarte calor de manera eficiente y sostenible,
             sin comprometer la calidad del aire que respiramos.
           </motion.p>
@@ -28,7 +29,7 @@ const SectionTwo = () => {
           <motion.p
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
           >
             Sabemos que un hogar cálido no es solo cuestión de temperatura, sino
             también de crear un espacio acogedor donde cada momento se vuelva
@@ -40,7 +41,7 @@ const SectionTwo = () => {
           <motion.p
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
           >
             Nuestro propósito es ofrecerte{" "}
             <span className="font-semibold text-amber-500 hover:text-amber-400 cursor-pointer transition-all duration-500">
@@ -55,7 +56,7 @@ const SectionTwo = () => {
           <motion.p
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: 50, opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
           >
             Porque creemos que cuidar del medio ambiente empieza desde casa, y
             no hay nada más valioso que compartir momentos únicos con quienes
@@ -65,6 +66,14 @@ const SectionTwo = () => {
             </span>
             y descubre cómo podemos acompañarte!
           </motion.p>
+          {/* <AnimatedParagraph
+            content={` Porque creemos que cuidar del medio ambiente empieza desde casa, y no hay
+      nada más valioso que compartir momentos únicos con quienes amas. ¡Conoce{" "}
+      <span className="font-semibold text-amber-500 hover:text-amber-400 cursor-pointer transition-all duration-500">
+        nuestro catálogo{" "}
+      </span>
+      y descubre cómo podemos acompañarte!`}
+          /> */}
         </div>
       </div>
     </div>

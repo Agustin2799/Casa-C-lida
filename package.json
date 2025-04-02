@@ -10,12 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@heroicons/react": "^2.1.5",
+    "@heroicons/react": "^2.2.0",
     "aos": "^3.0.0-beta.6",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.11.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router": "^7.4.1",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {

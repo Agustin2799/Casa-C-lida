@@ -147,4 +147,16 @@ const Navbar2 = () => {
   );
 };
 
+//Para no olvidar lo que se puede  hacer con react-scroll, con spy y smooth
+// import { Link } from "react-scroll";
+
+// <nav>
+//   <Link to="section1" spy={true} smooth={true} duration={500}>
+//     Ir a Sección 1
+//   </Link>
+//   <Link to="section2" spy={true} smooth={true} duration={500}>
+//     Ir a Sección 2
+//   </Link>
+// </nav>;
+
 export default Navbar2;

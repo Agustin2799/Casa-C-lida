@@ -7,7 +7,7 @@ const Button = ({ text }) => {
       className=""
       initial={{ x: 50, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{duration:1.5, delay: 2.8}}
+      transition={{duration:1.5, delay: 2.3}}
     >
       <motion.button
         initial={{rotate:0, scale:1}}
